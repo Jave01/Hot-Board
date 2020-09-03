@@ -8,10 +8,10 @@ import serial   # python -m pip install pyserial
 class vcp_reader():
     vcp_baudrate = 9600     # standard baud
 
-    def __init__(self,baudrate,port_name):
+    def __init__(self):
         serp = serial.Serial()
-        serp.baud = baudrate
-        serp.com = port_name
+        serp.baud = 9600
+        #serp.com = port_name
         serp.open()
         print(serp.name)
 
