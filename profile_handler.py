@@ -1,5 +1,5 @@
 # ******************************************
-# file: event_handler.py
+# file: profile_handler.py
 # project: Hot-Board
-# description: handles events, triggered by HW
+# description: handling profile saving
 # ******************************************
