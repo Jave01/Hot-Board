@@ -12,9 +12,9 @@ import time
 import serial
 
 class VirtualComPort():
-    def __init__(self,switch_Identifier,number_of_positions):
+    def __init__(self,switch_Identifier,number_of_digits):
         # protocoll constants
-        self.numberOfPositions = number_of_positions
+        self.numberOfDigits = number_of_digits
         self.switchIdentifier = switch_Identifier
         # create vcp object
         self.ser = serial.Serial()
@@ -37,12 +37,12 @@ class VirtualComPort():
 
     def check_switch_state(self):
         # read serial port buffer
-        serData = self.ser.read(len(self.switchIdentifier)+self.numberOfPositions).decode('ascii')
+        serData = self.ser.read( len(self.switchIdentifier)+self.numberOfDigits ).decode('ascii')
         # if data is valid
         if self.switchIdentifier in serData:
             # get the switch number. can be 1 or more digits
             retVal = 0
-            for i in range(self.numberOfPositions):
+            for i in range(self.numberOfDigits):
                 retVal += int( serData[(i+1)*(-1)] ) * pow(10,i)
             return retVal
         else:
