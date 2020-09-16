@@ -1,6 +1,7 @@
 # ******************************************
 # file: vcp_handler.py
 # project: Hot-Board
+# author: Nils Jäggi
 # description: communication with the Hardware itself
 # ******************************************
 import sys
