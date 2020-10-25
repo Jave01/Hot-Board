@@ -1,0 +1,13 @@
+Added Component: Designator=P3(USB_SMD)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=P3-A1/B12
+Added Pin To Net: NetName=NetC7_1 Pin=P3-A4/B9
+Added Pin To Net: NetName=NetP3_A5 Pin=P3-A5
+Added Pin To Net: NetName=NetIC3_6 Pin=P3-A6
+Added Pin To Net: NetName=NetIC3_4 Pin=P3-A7
+Added Pin To Net: NetName=GND Pin=P3-B1/A12
+Added Pin To Net: NetName=NetC7_1 Pin=P3-B4/A9
+Added Pin To Net: NetName=NetP3_B5 Pin=P3-B5
+Added Pin To Net: NetName=NetIC3_6 Pin=P3-B6
+Added Pin To Net: NetName=NetIC3_4 Pin=P3-B7
+Added Member To Class: ClassName=hot_board Member=Component P3 USB4105-GF-A

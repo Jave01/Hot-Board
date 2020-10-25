@@ -1,0 +1,17 @@
+Added Component: Designator=P2(1x2 Header)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Artikelnummer_DIS"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Artikelnummer_FA"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Artikelnummer_HEK"; Value = "2520674"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Artikelnummer_SAP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Bestückung"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datum"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "http://dmshekatron.securiton.int/idmwsout/doccontent.dll?library=hekatron^hk79295n11&id=004881205"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Info"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Richtpreis_EURO"; Value = "0.2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SMD"; Value = "N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetP2_1 Pin=P2-1
+Added Pin To Net: NetName=+VUSB Pin=P2-2
+Added Member To Class: ClassName=hot_board Member=Component P2 Jumper
+Added Room: Name=hot_board
