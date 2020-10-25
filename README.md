@@ -1,7 +1,3 @@
 # Hot-Board
-Implementation Software for the Hotkey Board
 
-BüP
-
-master change
-
+Repository from the Hotkey-Board. Including pcb, Casing, Firmware and the python Application.
