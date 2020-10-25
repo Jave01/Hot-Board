@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=NetP3_A5 Pin=P3-B5
+Removed Pin From Net: NetName=NetP3_A5 Pin=R9-2
+Added Component: Designator=R22(0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Artikelnummer_DIS"; Value = "715605"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Artikelnummer_FA"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Artikelnummer_HEK"; Value = "1191429"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Artikelnummer_SAP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Bestückung"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datum"; Value = "26.04.06"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Info"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Richtpreis_EURO"; Value = "0.0004"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=R22-1
+Added Pin To Net: NetName=NetP3_A5 Pin=R22-2
+Added Pin To Net: NetName=NetP3_B5 Pin=P3-B5
+Added Pin To Net: NetName=NetP3_B5 Pin=R9-2
+Added Net: Name=NetP3_B5
+Added Member To Class: ClassName=hot_board Member=Component R22 5K1
+Added Room: Name=hot_board
