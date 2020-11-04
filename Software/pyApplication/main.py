@@ -14,6 +14,6 @@ import vcp_handler as vcp
 
 
 
-com = vcp.VirtualComPort('s', 2)
+com = vcp.VirtualComPort('G', 2)
 
 print('Ports: ', com.get_available_serial_ports())
