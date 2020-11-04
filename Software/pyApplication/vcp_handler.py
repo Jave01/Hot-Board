@@ -4,23 +4,19 @@
 # author: Nils Jäggi
 # description: communication with the Hardware itself
 # ******************************************
-import sys
 import glob
+import sys
 import serial   # python -m pip install pyserial
 
-import sys
-import time
-import serial
-
 class VirtualComPort():
-    def __init__(self,switch_Identifier,number_of_digits):
+    def __init__(self,switch_Identifier: str ,number_of_digits: int):
         # protocoll constants
         self.numberOfDigits = number_of_digits
         self.switchIdentifier = switch_Identifier
         # create vcp object
         self.ser = serial.Serial()
         
-    def start_hot_board(self,com,baud):
+    def start_hot_board(self, com: str, baud: int = 115200) -> bool:
         """ opens the comport
 
             :returns:
@@ -36,7 +32,7 @@ class VirtualComPort():
         except serial.SerialException:
             return False
 
-    def check_switch_state(self):
+    def check_switch_state(self) -> int:
         # read serial port buffer
         serData = self.ser.read( len(self.switchIdentifier)+self.numberOfDigits ).decode('ascii')
         # if data is valid
@@ -49,7 +45,12 @@ class VirtualComPort():
         else:
             return -1
 
-    def get_available_serial_ports(self):
+    def get_buffer_value(self):
+        """Returns serial buffer convertet to Ascii"""
+        serData = self.ser.read(256).decode('ascii')
+        return serData
+
+    def get_available_serial_ports(self) -> list:
         """ Lists serial port names
 
             :raises EnvironmentError:
@@ -77,13 +78,3 @@ class VirtualComPort():
                 pass
         return result
 
-"""boi = vcpboi('switch',1)
-print(boi.get_available_serial_ports())
-print(boi.start_hot_board('COM3',115200))
-
-while True:
-    state = boi.check_switch_state()
-    if state != -1:
-        print(state)
-    time.sleep(0.5)"""
-        
