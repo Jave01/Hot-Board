@@ -95,8 +95,6 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	
-	
   while (1)
   { 
 		if(HAL_GPIO_ReadPin(SW0_GPIO_Port,SW0_Pin) && !btn_flank_flags[0])
@@ -231,11 +229,9 @@ void update_btn_flank_flags(void)
 
 void vcp_send_switch(uint8_t switchNr)
 {
-	uint8_t buffer[3];
-	buffer[0] = 's';
-	buffer[1] = switchNr / 10;
-	buffer[2] = switchNr % 10;
-	CDC_Transmit_FS(buffer,3);
+	char buffer[3] = "";
+	sprintf(buffer,"s%2.0d",switchNr);
+	CDC_Transmit_FS((uint8_t*)buffer,3);
 }
 /* USER CODE END 4 */
 
