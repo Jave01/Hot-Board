@@ -3,7 +3,7 @@
 <title>Static Call Graph - [stmFirmware\stmFirmware.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image stmFirmware\stmFirmware.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Nov 05 19:46:22 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Nov 05 20:26:02 2020
 <BR><P>
 <H3>Maximum Stack Usage =        240 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -566,7 +566,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[90]"></a>HAL_PCD_Init</STRONG> (Thumb, 230 bytes, Stack size 48 bytes, stm32l4xx_hal_pcd.o(i.HAL_PCD_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_MspInit
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetCurrentMode
@@ -580,8 +580,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_LL_Init
 </UL>
 
-<P><STRONG><a name="[91]"></a>HAL_PCD_MspInit</STRONG> (Thumb, 108 bytes, Stack size 32 bytes, usbd_conf.o(i.HAL_PCD_MspInit))
-<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = HAL_PCD_MspInit &rArr; HAL_GPIO_Init
+<P><STRONG><a name="[91]"></a>HAL_PCD_MspInit</STRONG> (Thumb, 134 bytes, Stack size 48 bytes, usbd_conf.o(i.HAL_PCD_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = HAL_PCD_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
@@ -720,7 +720,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l412xx.o(RESET)
 </UL>
 <P><STRONG><a name="[ab]"></a>MX_USB_DEVICE_Init</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, usb_device.o(i.MX_USB_DEVICE_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = MX_USB_DEVICE_Init &rArr; USBD_Init &rArr; USBD_LL_Init &rArr; HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = MX_USB_DEVICE_Init &rArr; USBD_Init &rArr; USBD_LL_Init &rArr; HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_Start
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_RegisterClass
@@ -932,7 +932,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ac]"></a>USBD_Init</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, usbd_core.o(i.USBD_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = USBD_Init &rArr; USBD_LL_Init &rArr; HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = USBD_Init &rArr; USBD_LL_Init &rArr; HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_LL_Init
 </UL>
@@ -982,7 +982,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[c6]"></a>USBD_LL_Init</STRONG> (Thumb, 128 bytes, Stack size 8 bytes, usbd_conf.o(i.USBD_LL_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = USBD_LL_Init &rArr; HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = USBD_LL_Init &rArr; HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_EnableVddUSB
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_Init
@@ -1301,7 +1301,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[d7]"></a>vcp_send_switch</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, main.o(i.vcp_send_switch))
+<P><STRONG><a name="[d7]"></a>vcp_send_switch</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, main.o(i.vcp_send_switch))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = vcp_send_switch &rArr; CDC_Transmit_FS &rArr; USBD_CDC_TransmitPacket &rArr; USBD_LL_Transmit &rArr; HAL_PCD_EP_Transmit &rArr; USB_EPStartXfer &rArr; USB_WritePMA
 </UL>
 <BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CDC_Transmit_FS
