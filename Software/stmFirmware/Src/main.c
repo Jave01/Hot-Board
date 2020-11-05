@@ -234,7 +234,7 @@ void vcp_send_switch(uint8_t switchNr)
 	uint8_t buffer[3];
 	buffer[0] = 's';
 	buffer[1] = switchNr / 10;
-	buffer[2] = switchNr & 10;
+	buffer[2] = switchNr % 10;
 	CDC_Transmit_FS(buffer,3);
 }
 /* USER CODE END 4 */
