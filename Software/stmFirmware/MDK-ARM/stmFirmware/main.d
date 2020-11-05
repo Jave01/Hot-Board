@@ -44,3 +44,4 @@ stmfirmware\main.o: C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/
 stmfirmware\main.o: C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h
 stmfirmware\main.o: C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
 stmfirmware\main.o: C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+stmfirmware\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
