@@ -4,23 +4,20 @@
 # author: Nils Jäggi
 # description: communication with the Hardware itself
 # ******************************************
-import sys
 import glob
-import serial   # python -m pip install pyserial
-
 import sys
-import time
-import serial
+import serial  # python -m pip install pyserial
+
 
 class VirtualComPort():
-    def __init__(self,switch_Identifier,number_of_digits):
+    def __init__(self, switch_Identifier: str, number_of_digits: int):
         # protocoll constants
         self.numberOfDigits = number_of_digits
         self.switchIdentifier = switch_Identifier
         # create vcp object
         self.ser = serial.Serial()
-        
-    def start_hot_board(self,com,baud):
+
+    def start_hot_board(self, com: str, baud: int = 115200) -> bool:
         """ opens the comport
 
             :returns:
@@ -36,20 +33,25 @@ class VirtualComPort():
         except serial.SerialException:
             return False
 
-    def check_switch_state(self):
+    def check_switch_state(self) -> int:
         # read serial port buffer
-        serData = self.ser.read( len(self.switchIdentifier)+self.numberOfDigits ).decode('ascii')
+        serData = self.ser.read(len(self.switchIdentifier) + self.numberOfDigits).decode('ascii')
         # if data is valid
         if self.switchIdentifier in serData:
             # get the switch number. can be 1 or more digits
             retVal = 0
             for i in range(self.numberOfDigits):
-                retVal += int( serData[(i+1)*(-1)] ) * pow(10,i)
+                retVal += int(serData[(i + 1) * (-1)]) * pow(10, i)
             return retVal
         else:
             return -1
 
-    def get_available_serial_ports(self):
+    def get_buffer_value(self):
+        """Returns serial buffer convertet to Ascii"""
+        serData = self.ser.read(256).decode('ascii')
+        return serData
+
+    def get_available_serial_ports(self) -> list:
         """ Lists serial port names
 
             :raises EnvironmentError:
@@ -66,7 +68,7 @@ class VirtualComPort():
             ports = glob.glob('/dev/tty.*')
         else:
             raise EnvironmentError('Unsupported platform')
-        
+
         result = []
         for port in ports:
             try:
@@ -77,13 +79,3 @@ class VirtualComPort():
                 pass
         return result
 
-"""boi = vcpboi('switch',1)
-print(boi.get_available_serial_ports())
-print(boi.start_hot_board('COM3',115200))
-
-while True:
-    state = boi.check_switch_state()
-    if state != -1:
-        print(state)
-    time.sleep(0.5)"""
-        
