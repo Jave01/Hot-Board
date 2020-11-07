@@ -44,6 +44,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+// saves the state of the old switch-state, used for sw-flank detection 
 bool btn_flank_flags[12] = {false};	
 /* USER CODE END PV */
 
@@ -97,34 +98,36 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   { 
-		if(HAL_GPIO_ReadPin(SW0_GPIO_Port,SW0_Pin) && !btn_flank_flags[0])
-			vcp_send_switch(0);
-		if(HAL_GPIO_ReadPin(SW1_GPIO_Port,SW1_Pin) && !btn_flank_flags[1])
-			vcp_send_switch(1);
-		if(HAL_GPIO_ReadPin(SW2_GPIO_Port,SW2_Pin) && !btn_flank_flags[2])
-			vcp_send_switch(2);
-		if(HAL_GPIO_ReadPin(SW3_GPIO_Port,SW3_Pin) && !btn_flank_flags[3])
-			vcp_send_switch(3);
-		if(HAL_GPIO_ReadPin(SW4_GPIO_Port,SW4_Pin) && !btn_flank_flags[4])
-			vcp_send_switch(4);
-		if(HAL_GPIO_ReadPin(SW5_GPIO_Port,SW5_Pin) && !btn_flank_flags[5])
-			vcp_send_switch(5);
-		if(HAL_GPIO_ReadPin(SW6_GPIO_Port,SW6_Pin) && !btn_flank_flags[6])
-			vcp_send_switch(6);
-		if(HAL_GPIO_ReadPin(SW7_GPIO_Port,SW7_Pin) && !btn_flank_flags[7])
-			vcp_send_switch(7);
-		if(HAL_GPIO_ReadPin(SW8_GPIO_Port,SW8_Pin) && !btn_flank_flags[8])
-			vcp_send_switch(8);
-		if(HAL_GPIO_ReadPin(SW9_GPIO_Port,SW9_Pin) && !btn_flank_flags[9])
-			vcp_send_switch(9);
-		if(HAL_GPIO_ReadPin(SW10_GPIO_Port,SW10_Pin) && !btn_flank_flags[10])
-			vcp_send_switch(10);
-		if(HAL_GPIO_ReadPin(SW11_GPIO_Port,SW11_Pin) && !btn_flank_flags[11])
-			vcp_send_switch(11);
+	// if switch is HIGH and before it was LOW eg. neg. Flank
+	// send the switch number to vpc as "sXX" where XX = number of the switch
+	if(HAL_GPIO_ReadPin(SW0_GPIO_Port,SW0_Pin) && !btn_flank_flags[0])
+		vcp_send_switch(0);
+	if(HAL_GPIO_ReadPin(SW1_GPIO_Port,SW1_Pin) && !btn_flank_flags[1])
+		vcp_send_switch(1);
+	if(HAL_GPIO_ReadPin(SW2_GPIO_Port,SW2_Pin) && !btn_flank_flags[2])
+		vcp_send_switch(2);
+	if(HAL_GPIO_ReadPin(SW3_GPIO_Port,SW3_Pin) && !btn_flank_flags[3])
+		vcp_send_switch(3);
+	if(HAL_GPIO_ReadPin(SW4_GPIO_Port,SW4_Pin) && !btn_flank_flags[4])
+		vcp_send_switch(4);
+	if(HAL_GPIO_ReadPin(SW5_GPIO_Port,SW5_Pin) && !btn_flank_flags[5])
+		vcp_send_switch(5);
+	if(HAL_GPIO_ReadPin(SW6_GPIO_Port,SW6_Pin) && !btn_flank_flags[6])
+		vcp_send_switch(6);
+	if(HAL_GPIO_ReadPin(SW7_GPIO_Port,SW7_Pin) && !btn_flank_flags[7])
+		vcp_send_switch(7);
+	if(HAL_GPIO_ReadPin(SW8_GPIO_Port,SW8_Pin) && !btn_flank_flags[8])
+		vcp_send_switch(8);
+	if(HAL_GPIO_ReadPin(SW9_GPIO_Port,SW9_Pin) && !btn_flank_flags[9])
+		vcp_send_switch(9);
+	if(HAL_GPIO_ReadPin(SW10_GPIO_Port,SW10_Pin) && !btn_flank_flags[10])
+		vcp_send_switch(10);
+	if(HAL_GPIO_ReadPin(SW11_GPIO_Port,SW11_Pin) && !btn_flank_flags[11])
+		vcp_send_switch(11);
 		
-		update_btn_flank_flags();
+	update_btn_flank_flags();	// save the new states 
 		
-		HAL_Delay(10); // wait 10ms
+	HAL_Delay(10); 			// wait 10ms
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -211,6 +214,11 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+/**
+  * @brief Reads the GPIO states of the switches and saves them in a global array
+  * @param None
+  * @retval None
+  */
 void update_btn_flank_flags(void)
 {
 	btn_flank_flags[0] = HAL_GPIO_ReadPin(SW0_GPIO_Port,SW0_Pin);
@@ -227,11 +235,16 @@ void update_btn_flank_flags(void)
 	btn_flank_flags[11] = HAL_GPIO_ReadPin(SW11_GPIO_Port,SW11_Pin);
 }
 
+/**
+  * @brief sends the string to the vcp
+  * @param switchNr: Number of the switch
+  * @retval None
+  */
 void vcp_send_switch(uint8_t switchNr)
 {
-	char buffer[3] = "";
-	sprintf(buffer,"s%02d",switchNr);
-	CDC_Transmit_FS((uint8_t*)buffer,3);
+	char buffer[3] = "";			// define buffer
+	sprintf(buffer,"s%02d",switchNr);	// generate string
+	CDC_Transmit_FS((uint8_t*)buffer,3);	// send to vcp
 }
 /* USER CODE END 4 */
 
