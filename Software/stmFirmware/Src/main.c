@@ -230,7 +230,7 @@ void update_btn_flank_flags(void)
 void vcp_send_switch(uint8_t switchNr)
 {
 	char buffer[3] = "";
-	sprintf(buffer,"s%2.0d",switchNr);
+	sprintf(buffer,"s%02d",switchNr);
 	CDC_Transmit_FS((uint8_t*)buffer,3);
 }
 /* USER CODE END 4 */
