@@ -17,14 +17,14 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "usbd_cdc_if.h"
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -44,14 +44,15 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+bool btn_flank_flags[12] = {false};	
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
-
+void update_btn_flank_flags(void);
+void vcp_send_switch(uint8_t switchNr);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -95,7 +96,35 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
-  {
+  { 
+		if(HAL_GPIO_ReadPin(SW0_GPIO_Port,SW0_Pin) && !btn_flank_flags[0])
+			vcp_send_switch(0);
+		if(HAL_GPIO_ReadPin(SW1_GPIO_Port,SW1_Pin) && !btn_flank_flags[1])
+			vcp_send_switch(1);
+		if(HAL_GPIO_ReadPin(SW2_GPIO_Port,SW2_Pin) && !btn_flank_flags[2])
+			vcp_send_switch(2);
+		if(HAL_GPIO_ReadPin(SW3_GPIO_Port,SW3_Pin) && !btn_flank_flags[3])
+			vcp_send_switch(3);
+		if(HAL_GPIO_ReadPin(SW4_GPIO_Port,SW4_Pin) && !btn_flank_flags[4])
+			vcp_send_switch(4);
+		if(HAL_GPIO_ReadPin(SW5_GPIO_Port,SW5_Pin) && !btn_flank_flags[5])
+			vcp_send_switch(5);
+		if(HAL_GPIO_ReadPin(SW6_GPIO_Port,SW6_Pin) && !btn_flank_flags[6])
+			vcp_send_switch(6);
+		if(HAL_GPIO_ReadPin(SW7_GPIO_Port,SW7_Pin) && !btn_flank_flags[7])
+			vcp_send_switch(7);
+		if(HAL_GPIO_ReadPin(SW8_GPIO_Port,SW8_Pin) && !btn_flank_flags[8])
+			vcp_send_switch(8);
+		if(HAL_GPIO_ReadPin(SW9_GPIO_Port,SW9_Pin) && !btn_flank_flags[9])
+			vcp_send_switch(9);
+		if(HAL_GPIO_ReadPin(SW10_GPIO_Port,SW10_Pin) && !btn_flank_flags[10])
+			vcp_send_switch(10);
+		if(HAL_GPIO_ReadPin(SW11_GPIO_Port,SW11_Pin) && !btn_flank_flags[11])
+			vcp_send_switch(11);
+		
+		update_btn_flank_flags();
+		
+		HAL_Delay(10); // wait 10ms
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -113,13 +142,14 @@ void SystemClock_Config(void)
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
   RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
-  /** Configure the main internal regulator output voltage 
+  /** Configure the main internal regulator output voltage
   */
   if (HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1) != HAL_OK)
   {
     Error_Handler();
   }
-  /** Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the RCC Oscillators according to the specified parameters
+  * in the RCC_OscInitTypeDef structure.
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSE|RCC_OSCILLATORTYPE_MSI;
   RCC_OscInitStruct.LSEState = RCC_LSE_BYPASS;
@@ -131,7 +161,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  /** Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the CPU, AHB and APB buses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
@@ -150,7 +180,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  /** Enable MSI Auto calibration 
+  /** Enable MSI Auto calibration
   */
   HAL_RCCEx_EnableMSIPLLMode();
 }
@@ -168,12 +198,12 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
-  /*Configure GPIO pins : SW0_Pin SW1_Pin SW2_Pin SW3_Pin 
-                           SW4_Pin SW5_Pin SW6_Pin SW7_Pin 
-                           SW8_Pin SW9_Pin SW10_Pin SW11_Pin */
-  GPIO_InitStruct.Pin = SW0_Pin|SW1_Pin|SW2_Pin|SW3_Pin 
-                          |SW4_Pin|SW5_Pin|SW6_Pin|SW7_Pin 
-                          |SW8_Pin|SW9_Pin|SW10_Pin|SW11_Pin;
+  /*Configure GPIO pins : SW2_Pin SW3_Pin SW7_Pin SW6_Pin
+                           SW11_Pin SW10_Pin SW9_Pin SW8_Pin
+                           SW5_Pin SW4_Pin SW0_Pin SW1_Pin */
+  GPIO_InitStruct.Pin = SW2_Pin|SW3_Pin|SW7_Pin|SW6_Pin
+                          |SW11_Pin|SW10_Pin|SW9_Pin|SW8_Pin
+                          |SW5_Pin|SW4_Pin|SW0_Pin|SW1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -181,7 +211,28 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void update_btn_flank_flags(void)
+{
+	btn_flank_flags[0] = HAL_GPIO_ReadPin(SW0_GPIO_Port,SW0_Pin);
+	btn_flank_flags[1] = HAL_GPIO_ReadPin(SW1_GPIO_Port,SW1_Pin);
+	btn_flank_flags[2] = HAL_GPIO_ReadPin(SW2_GPIO_Port,SW2_Pin);
+	btn_flank_flags[3] = HAL_GPIO_ReadPin(SW3_GPIO_Port,SW3_Pin);
+	btn_flank_flags[4] = HAL_GPIO_ReadPin(SW4_GPIO_Port,SW4_Pin);
+	btn_flank_flags[5] = HAL_GPIO_ReadPin(SW5_GPIO_Port,SW5_Pin);
+	btn_flank_flags[6] = HAL_GPIO_ReadPin(SW6_GPIO_Port,SW6_Pin);
+	btn_flank_flags[7] = HAL_GPIO_ReadPin(SW7_GPIO_Port,SW7_Pin);
+	btn_flank_flags[8] = HAL_GPIO_ReadPin(SW8_GPIO_Port,SW8_Pin);
+	btn_flank_flags[9] = HAL_GPIO_ReadPin(SW9_GPIO_Port,SW9_Pin);
+	btn_flank_flags[10] = HAL_GPIO_ReadPin(SW10_GPIO_Port,SW10_Pin);
+	btn_flank_flags[11] = HAL_GPIO_ReadPin(SW11_GPIO_Port,SW11_Pin);
+}
 
+void vcp_send_switch(uint8_t switchNr)
+{
+	char buffer[3] = "";
+	sprintf(buffer,"s%02d",switchNr);
+	CDC_Transmit_FS((uint8_t*)buffer,3);
+}
 /* USER CODE END 4 */
 
 /**
@@ -205,7 +256,7 @@ void Error_Handler(void)
   * @retval None
   */
 void assert_failed(uint8_t *file, uint32_t line)
-{ 
+{
   /* USER CODE BEGIN 6 */
   /* User can add his own implementation to report the file name and line number,
      tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
