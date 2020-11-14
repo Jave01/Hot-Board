@@ -3,8 +3,14 @@ import xml.etree.ElementTree as ET
 from pynput.keyboard import Key, Controller
 import webbrowser
 
-
 class ProfileHandler():
+    """
+    This class handles all the parameters for the actions with the keys.
+
+    It takes over saving and reading of properties from the xml-file and
+    all functions that are executed at the pressing of a key take place here
+    """
+
     def __init__(self, key_number: int = 12, path: str = 'profiles.xml'):
         self.active_user = 'user1'
         self.key_number = key_number
@@ -33,21 +39,21 @@ class ProfileHandler():
 
     def reload_actions(self):
         """ Reload the actions from the xml file into the list"""
+
         key_attributes = []
         self.key_functions = []
         for k in self.root.iter('key'):
             key_attributes = k.get('name'), k.get('function'), k.get('additional_info')
-            self.key_functions.append(key_attributes)
+            self.key_functions.append(list(key_attributes))
 
 
     def save_properties(self):
         """Takes the information from the list and saves it into the xml file"""
+
         for i, k in enumerate(self.root.iter('key'), 0):
             # update every property from the list into the xml file
             k.set('function', self.key_functions[i][1])
             k.set('additional_info', self.key_functions[i][2])
-            if i == 6:
-                k.set('function', 'hello mf')
 
         self.tree.write(self.path)
 
@@ -62,20 +68,23 @@ class ProfileHandler():
                 # set new parameters
                 k[1] = new_action
                 k[2] = action_info
+                print('actions set')
+                break
 
         self.save_properties()
+        self.reload_actions()
+
 
     def execute_action(self, key):
         """Execute the function from the key"""
-
         # search list for key by name
         for k in self.key_functions:
             if k[0] == key:
-                # get action and execute it if parameter is not empty
+                # get action and execute it
                 function = k[1]
                 info = k[2]
                 if function != '':
-                    if function == 'start program':
+                    if function == 'execute file':
                         # try to start the file on saved path
                         try:
                             os.startfile(info)
@@ -95,13 +104,12 @@ class ProfileHandler():
 
                         # release every pressed key
                         for k in keys_to_press:
-                            # if its a single char, its not a special key
                             if len(k) == 1:
                                 self.keyboard.release(k)
                             else:
                                 self.release_special_key(k)
 
-                    elif function == 'url':
+                    elif function == 'open url':
                         webbrowser.open(info)
 
                 break
@@ -116,11 +124,11 @@ class ProfileHandler():
             self.keyboard.press(Key.alt)
         elif key == 'Win':
             self.keyboard.press(Key.cmd)
-        elif key == 'f4':
+        elif key == 'F4':
             self.keyboard.press(Key.f4)
-        elif key == 'f7':
+        elif key == 'F7':
             self.keyboard.press(Key.f7)
-        elif key == 'f9':
+        elif key == 'F9':
             self.keyboard.press(Key.f9)
         elif key == 'PlayPause':
             self.keyboard.press(Key.media_play_pause)
@@ -139,11 +147,11 @@ class ProfileHandler():
             self.keyboard.release(Key.alt)
         elif key == 'Win':
             self.keyboard.release(Key.cmd)
-        elif key == 'f4':
+        elif key == 'F4':
             self.keyboard.release(Key.f4)
-        elif key == 'f7':
+        elif key == 'F7':
             self.keyboard.release(Key.f7)
-        elif key == 'f9':
+        elif key == 'F9':
             self.keyboard.release(Key.f9)
         elif key == 'PlayPause':
             self.keyboard.release(Key.media_play_pause)
