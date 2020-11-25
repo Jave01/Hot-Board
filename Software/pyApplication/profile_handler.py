@@ -2,6 +2,8 @@ import os
 import xml.etree.ElementTree as ET
 from pynput.keyboard import Key, Controller
 import webbrowser
+import bz2
+import pyDes
 
 class ProfileHandler():
     """
@@ -36,10 +38,13 @@ class ProfileHandler():
         self.root = self.tree.getroot()
         self.reload_actions()
 
+        with open('key.txt', 'w'):
+            pass
+
+
 
     def reload_actions(self):
         """ Reload the actions from the xml file into the list"""
-
         key_attributes = []
         self.key_functions = []
         for k in self.root.iter('key'):
@@ -75,9 +80,9 @@ class ProfileHandler():
         self.reload_actions()
 
 
-    def execute_action(self, key):
+    def execute_action(self, key: str):
         """Execute the function from the key"""
-        # search list for key by name
+        # search list for key by names
         for k in self.key_functions:
             if k[0] == key:
                 # get action and execute it
@@ -137,6 +142,7 @@ class ProfileHandler():
         elif key == 'next':
             self.keyboard.press(Key.media_next)
         return
+
 
     def release_special_key(self, key):
         if key == 'Ctrl':
