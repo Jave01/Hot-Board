@@ -2,16 +2,16 @@
     <users>
         <user1 name="user1">
             <key additional_info="Win,e" function="hotkey" name="s0" />
-            <key additional_info="C:\Users\david\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Spotify" function="start program" name="s1" />
-            <key additional_info="https://www.youtube.com" function="url" name="s2" />
-            <key additional_info="C:\Users\david\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad" function="start program" name="s3" />
+            <key additional_info="https://www.youtube.com" function="open url" name="s1" />
+            <key additional_info="https://www.youtube.com" function="open url" name="s2" />
+            <key additional_info="C:\Users\david\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad" function="execute file" name="s3" />
             <key additional_info="" function="" name="s4" />
-            <key additional_info="" function="" name="s5" />
+            <key additional_info="" function="hotkey" name="s5" />
             <key additional_info="PlayPause" function="hotkey" name="s6" />
             <key additional_info="" function="" name="s7" />
             <key additional_info="" function="" name="s8" />
-            <key additional_info="" function="" name="s9" />
-            <key additional_info="Alt,f4" function="hotkey" name="s10" />
+            <key additional_info="Ctrl,Alt,m" function="" name="s9" />
+            <key additional_info="Alt,F4" function="hotkey" name="s10" />
             <key additional_info="" function="" name="s11" />
         </user1>
     </users>

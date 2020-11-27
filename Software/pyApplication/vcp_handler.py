@@ -11,7 +11,7 @@ from serial.tools import list_ports
 
 class VirtualComPort():
     def __init__(self, switch_Identifier: str, number_of_digits: int):
-        # protocoll constants
+        # protocol constants
         self.numberOfDigits = number_of_digits
         self.switchIdentifier = switch_Identifier
 

@@ -34,6 +34,6 @@ while True:
             print(key)
             if key == 's11':
                 break
-        ProfileHandler.execute_action(key)
+            ProfileHandler.execute_action(key)
     else:
         wait_for_board()

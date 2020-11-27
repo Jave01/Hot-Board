@@ -38,18 +38,15 @@ class ProfileHandler():
         self.root = self.tree.getroot()
         self.reload_actions()
 
-        with open('key.txt', 'w'):
-            pass
-
 
 
     def reload_actions(self):
         """ Reload the actions from the xml file into the list"""
-        key_attributes = []
         self.key_functions = []
         for k in self.root.iter('key'):
             key_attributes = k.get('name'), k.get('function'), k.get('additional_info')
             self.key_functions.append(list(key_attributes))
+        return
 
 
     def save_properties(self):
@@ -77,7 +74,6 @@ class ProfileHandler():
                 break
 
         self.save_properties()
-        self.reload_actions()
 
 
     def execute_action(self, key: str):
