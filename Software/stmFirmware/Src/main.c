@@ -46,6 +46,7 @@
 /* USER CODE BEGIN PV */
 // saves the state of the old switch-state, used for sw-flank detection 
 bool btn_flank_flags[12] = {false};	
+uint32_t switch0_longpress_var = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -91,39 +92,58 @@ int main(void)
   MX_GPIO_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-
+  
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   { 
-	// if switch is HIGH and before it was LOW eg. neg. Flank
+	// if switch is HIGH and before it was LOW eg. pos. Flank
 	// send the switch number to vpc as "sXX" where XX = number of the switch
-	if(HAL_GPIO_ReadPin(SW0_GPIO_Port,SW0_Pin) && !btn_flank_flags[0])
-		vcp_send_switch(0);
+	  
+	// its a bit different for the first switch because it 
+	// also tracks a long press
+	if(HAL_GPIO_ReadPin(SW0_GPIO_Port,SW0_Pin) == 1)
+	{
+		switch0_longpress_var++;
+	}
+	else
+	{
+		if(switch0_longpress_var >= 200)
+		{
+			vcp_send_switch(0);		// after pressing s1 for 2sec
+			switch0_longpress_var = 0;
+		}
+		else if(switch0_longpress_var != 0)
+		{
+			vcp_send_switch(1);		// s1 was pressed < 2sec
+			switch0_longpress_var = 0;
+		}
+	}
+	// remaining 11 switches, only tracking pos. flank
 	if(HAL_GPIO_ReadPin(SW1_GPIO_Port,SW1_Pin) && !btn_flank_flags[1])
-		vcp_send_switch(1);
-	if(HAL_GPIO_ReadPin(SW2_GPIO_Port,SW2_Pin) && !btn_flank_flags[2])
 		vcp_send_switch(2);
-	if(HAL_GPIO_ReadPin(SW3_GPIO_Port,SW3_Pin) && !btn_flank_flags[3])
+	if(HAL_GPIO_ReadPin(SW2_GPIO_Port,SW2_Pin) && !btn_flank_flags[2])
 		vcp_send_switch(3);
-	if(HAL_GPIO_ReadPin(SW4_GPIO_Port,SW4_Pin) && !btn_flank_flags[4])
+	if(HAL_GPIO_ReadPin(SW3_GPIO_Port,SW3_Pin) && !btn_flank_flags[3])
 		vcp_send_switch(4);
-	if(HAL_GPIO_ReadPin(SW5_GPIO_Port,SW5_Pin) && !btn_flank_flags[5])
+	if(HAL_GPIO_ReadPin(SW4_GPIO_Port,SW4_Pin) && !btn_flank_flags[4])
 		vcp_send_switch(5);
-	if(HAL_GPIO_ReadPin(SW6_GPIO_Port,SW6_Pin) && !btn_flank_flags[6])
+	if(HAL_GPIO_ReadPin(SW5_GPIO_Port,SW5_Pin) && !btn_flank_flags[5])
 		vcp_send_switch(6);
-	if(HAL_GPIO_ReadPin(SW7_GPIO_Port,SW7_Pin) && !btn_flank_flags[7])
+	if(HAL_GPIO_ReadPin(SW6_GPIO_Port,SW6_Pin) && !btn_flank_flags[6])
 		vcp_send_switch(7);
-	if(HAL_GPIO_ReadPin(SW8_GPIO_Port,SW8_Pin) && !btn_flank_flags[8])
+	if(HAL_GPIO_ReadPin(SW7_GPIO_Port,SW7_Pin) && !btn_flank_flags[7])
 		vcp_send_switch(8);
-	if(HAL_GPIO_ReadPin(SW9_GPIO_Port,SW9_Pin) && !btn_flank_flags[9])
+	if(HAL_GPIO_ReadPin(SW8_GPIO_Port,SW8_Pin) && !btn_flank_flags[8])
 		vcp_send_switch(9);
-	if(HAL_GPIO_ReadPin(SW10_GPIO_Port,SW10_Pin) && !btn_flank_flags[10])
+	if(HAL_GPIO_ReadPin(SW9_GPIO_Port,SW9_Pin) && !btn_flank_flags[9])
 		vcp_send_switch(10);
-	if(HAL_GPIO_ReadPin(SW11_GPIO_Port,SW11_Pin) && !btn_flank_flags[11])
+	if(HAL_GPIO_ReadPin(SW10_GPIO_Port,SW10_Pin) && !btn_flank_flags[10])
 		vcp_send_switch(11);
+	if(HAL_GPIO_ReadPin(SW11_GPIO_Port,SW11_Pin) && !btn_flank_flags[11])
+		vcp_send_switch(12);
 		
 	update_btn_flank_flags();	// save the new states 
 		

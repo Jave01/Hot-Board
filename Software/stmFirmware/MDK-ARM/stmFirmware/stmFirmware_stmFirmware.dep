@@ -1,10 +1,10 @@
 Dependencies for Project 'stmFirmware', Target 'stmFirmware': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (startup_stm32l412xx.s)(0x5FA45197)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include--pd "__UVISION_VERSION SETA 532" --pd "_RTE_ SETA 1" --pd "STM32L412xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32l412xx.lst --xref -o stmfirmware\startup_stm32l412xx.o --depend stmfirmware\startup_stm32l412xx.d)
-F (../Src/main.c)(0x5FA6722A)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\main.o --omf_browse stmfirmware\main.crf --depend stmfirmware\main.d)
-I (../Inc/main.h)(0x5FA45193)
+F (startup_stm32l412xx.s)(0x5FB501F5)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include--pd "__UVISION_VERSION SETA 532" --pd "_RTE_ SETA 1" --pd "STM32L412xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32l412xx.lst --xref -o stmfirmware\startup_stm32l412xx.o --depend stmfirmware\startup_stm32l412xx.d)
+F (../Src/main.c)(0x5FC3C5F0)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\main.o --omf_browse stmfirmware\main.crf --depend stmfirmware\main.d)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -34,20 +34,20 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
-I (../Inc/usb_device.h)(0x5FA45191)
+I (../Inc/usb_device.h)(0x5FB501F5)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5F992C99)
-I (../Inc/usbd_conf.h)(0x5FA45192)
+I (../Inc/usbd_conf.h)(0x5FBE2976)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63E9FA)
-I (../Inc/usbd_cdc_if.h)(0x5FA45192)
+I (../Inc/usbd_cdc_if.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x5FA4552E)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x5F992C99)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63E9EC)
-F (../Src/usb_device.c)(0x5FA45191)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usb_device.o --omf_browse stmfirmware\usb_device.crf --depend stmfirmware\usb_device.d)
-I (../Inc/usb_device.h)(0x5FA45191)
+F (../Src/usb_device.c)(0x5FBE2977)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usb_device.o --omf_browse stmfirmware\usb_device.crf --depend stmfirmware\usb_device.d)
+I (../Inc/usb_device.h)(0x5FB501F5)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l412xx.h)(0x5F992C8B)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include/core_cm4.h)(0x5F992C96)
@@ -58,7 +58,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Inc
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include/mpu_armv7.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h)(0x5F992C8B)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5F992C96)
@@ -80,18 +80,18 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5F992C99)
-I (../Inc/usbd_conf.h)(0x5FA45192)
+I (../Inc/usbd_conf.h)(0x5FBE2976)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63E9FA)
-I (../Inc/main.h)(0x5FA45193)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x5F992C99)
-I (../Inc/usbd_desc.h)(0x5FA45192)
+I (../Inc/usbd_desc.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x5FA4552E)
-I (../Inc/usbd_cdc_if.h)(0x5FA45192)
-F (../Src/usbd_conf.c)(0x5FA45192)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usbd_conf.o --omf_browse stmfirmware\usbd_conf.crf --depend stmfirmware\usbd_conf.d)
+I (../Inc/usbd_cdc_if.h)(0x5FBE2976)
+F (../Src/usbd_conf.c)(0x5FBE2977)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usbd_conf.o --omf_browse stmfirmware\usbd_conf.crf --depend stmfirmware\usbd_conf.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l412xx.h)(0x5F992C8B)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include/core_cm4.h)(0x5F992C96)
@@ -102,7 +102,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Inc
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include/mpu_armv7.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h)(0x5F992C8B)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5F992C96)
@@ -124,24 +124,24 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5F992C99)
-I (../Inc/usbd_conf.h)(0x5FA45192)
+I (../Inc/usbd_conf.h)(0x5FBE2976)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63E9FA)
-I (../Inc/main.h)(0x5FA45193)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x5FA4552E)
-F (../Src/usbd_desc.c)(0x5FA45192)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usbd_desc.o --omf_browse stmfirmware\usbd_desc.crf --depend stmfirmware\usbd_desc.d)
+F (../Src/usbd_desc.c)(0x5FBE2977)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usbd_desc.o --omf_browse stmfirmware\usbd_desc.crf --depend stmfirmware\usbd_desc.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x5F992C99)
-I (../Inc/usbd_conf.h)(0x5FA45192)
+I (../Inc/usbd_conf.h)(0x5FBE2976)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63E9FA)
-I (../Inc/main.h)(0x5FA45193)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -174,19 +174,19 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x5F992C99)
-I (../Inc/usbd_desc.h)(0x5FA45192)
-F (../Src/usbd_cdc_if.c)(0x5FA45192)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usbd_cdc_if.o --omf_browse stmfirmware\usbd_cdc_if.crf --depend stmfirmware\usbd_cdc_if.d)
-I (../Inc/usbd_cdc_if.h)(0x5FA45192)
+I (../Inc/usbd_desc.h)(0x5FBE2976)
+F (../Src/usbd_cdc_if.c)(0x5FBE2977)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usbd_cdc_if.o --omf_browse stmfirmware\usbd_cdc_if.crf --depend stmfirmware\usbd_cdc_if.d)
+I (../Inc/usbd_cdc_if.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x5FA4552E)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5F992C99)
-I (../Inc/usbd_conf.h)(0x5FA45192)
+I (../Inc/usbd_conf.h)(0x5FBE2976)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63E9FA)
-I (../Inc/main.h)(0x5FA45193)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -218,10 +218,10 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x5F992C99)
-F (../Src/stm32l4xx_it.c)(0x5FA45193)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_it.o --omf_browse stmfirmware\stm32l4xx_it.crf --depend stmfirmware\stm32l4xx_it.d)
-I (../Inc/main.h)(0x5FA45193)
+F (../Src/stm32l4xx_it.c)(0x5FBE2977)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_it.o --omf_browse stmfirmware\stm32l4xx_it.crf --depend stmfirmware\stm32l4xx_it.d)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -251,11 +251,11 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
-I (../Inc/stm32l4xx_it.h)(0x5FA45193)
-F (../Src/stm32l4xx_hal_msp.c)(0x5FA45193)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_msp.o --omf_browse stmfirmware\stm32l4xx_hal_msp.crf --depend stmfirmware\stm32l4xx_hal_msp.d)
-I (../Inc/main.h)(0x5FA45193)
+I (../Inc/stm32l4xx_it.h)(0x5FBE2976)
+F (../Src/stm32l4xx_hal_msp.c)(0x5FB501F6)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_msp.o --omf_browse stmfirmware\stm32l4xx_hal_msp.crf --depend stmfirmware\stm32l4xx_hal_msp.d)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -285,7 +285,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
-F (../Src/system_stm32l4xx.c)(0x5F991A83)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\system_stm32l4xx.o --omf_browse stmfirmware\system_stm32l4xx.crf --depend stmfirmware\system_stm32l4xx.d)
+F (../Src/system_stm32l4xx.c)(0x5FB501F6)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\system_stm32l4xx.o --omf_browse stmfirmware\system_stm32l4xx.crf --depend stmfirmware\system_stm32l4xx.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l412xx.h)(0x5F992C8B)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include/core_cm4.h)(0x5F992C96)
@@ -296,7 +296,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Inc
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include/mpu_armv7.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h)(0x5F992C8B)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5F992C96)
@@ -319,7 +319,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_pcd.o --omf_browse stmfirmware\stm32l4xx_hal_pcd.crf --depend stmfirmware\stm32l4xx_hal_pcd.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -351,7 +351,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd_ex.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_pcd_ex.o --omf_browse stmfirmware\stm32l4xx_hal_pcd_ex.crf --depend stmfirmware\stm32l4xx_hal_pcd_ex.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -383,7 +383,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_ll_usb.o --omf_browse stmfirmware\stm32l4xx_ll_usb.crf --depend stmfirmware\stm32l4xx_ll_usb.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -415,7 +415,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c)(0x5F992C96)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal.o --omf_browse stmfirmware\stm32l4xx_hal.crf --depend stmfirmware\stm32l4xx_hal.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -447,7 +447,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_i2c.o --omf_browse stmfirmware\stm32l4xx_hal_i2c.crf --depend stmfirmware\stm32l4xx_hal_i2c.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -479,7 +479,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_i2c_ex.o --omf_browse stmfirmware\stm32l4xx_hal_i2c_ex.crf --depend stmfirmware\stm32l4xx_hal_i2c_ex.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -511,7 +511,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_rcc.o --omf_browse stmfirmware\stm32l4xx_hal_rcc.crf --depend stmfirmware\stm32l4xx_hal_rcc.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -543,7 +543,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_rcc_ex.o --omf_browse stmfirmware\stm32l4xx_hal_rcc_ex.crf --depend stmfirmware\stm32l4xx_hal_rcc_ex.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -575,7 +575,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_flash.o --omf_browse stmfirmware\stm32l4xx_hal_flash.crf --depend stmfirmware\stm32l4xx_hal_flash.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -607,7 +607,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_flash_ex.o --omf_browse stmfirmware\stm32l4xx_hal_flash_ex.crf --depend stmfirmware\stm32l4xx_hal_flash_ex.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -639,7 +639,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_flash_ramfunc.o --omf_browse stmfirmware\stm32l4xx_hal_flash_ramfunc.crf --depend stmfirmware\stm32l4xx_hal_flash_ramfunc.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -671,7 +671,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_gpio.o --omf_browse stmfirmware\stm32l4xx_hal_gpio.crf --depend stmfirmware\stm32l4xx_hal_gpio.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -703,7 +703,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_dma.o --omf_browse stmfirmware\stm32l4xx_hal_dma.crf --depend stmfirmware\stm32l4xx_hal_dma.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -735,7 +735,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_dma_ex.o --omf_browse stmfirmware\stm32l4xx_hal_dma_ex.crf --depend stmfirmware\stm32l4xx_hal_dma_ex.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -767,7 +767,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_pwr.o --omf_browse stmfirmware\stm32l4xx_hal_pwr.crf --depend stmfirmware\stm32l4xx_hal_pwr.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -799,7 +799,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_pwr_ex.o --omf_browse stmfirmware\stm32l4xx_hal_pwr_ex.crf --depend stmfirmware\stm32l4xx_hal_pwr_ex.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -831,7 +831,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c)(0x5F992C96)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_cortex.o --omf_browse stmfirmware\stm32l4xx_hal_cortex.crf --depend stmfirmware\stm32l4xx_hal_cortex.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -863,7 +863,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_exti.o --omf_browse stmfirmware\stm32l4xx_hal_exti.crf --depend stmfirmware\stm32l4xx_hal_exti.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -895,7 +895,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_tim.o --omf_browse stmfirmware\stm32l4xx_hal_tim.crf --depend stmfirmware\stm32l4xx_hal_tim.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -927,7 +927,7 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c)(0x5F992C97)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\stm32l4xx_hal_tim_ex.o --omf_browse stmfirmware\stm32l4xx_hal_tim_ex.crf --depend stmfirmware\stm32l4xx_hal_tim_ex.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -959,13 +959,13 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F992C96)
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c)(0x5F992C99)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usbd_core.o --omf_browse stmfirmware\usbd_core.crf --depend stmfirmware\usbd_core.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x5F992C99)
-I (../Inc/usbd_conf.h)(0x5FA45192)
+I (../Inc/usbd_conf.h)(0x5FBE2976)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63E9FA)
-I (../Inc/main.h)(0x5FA45193)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -1001,13 +1001,13 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/ST
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c)(0x5F992C99)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usbd_ctlreq.o --omf_browse stmfirmware\usbd_ctlreq.crf --depend stmfirmware\usbd_ctlreq.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5F992C99)
-I (../Inc/usbd_conf.h)(0x5FA45192)
+I (../Inc/usbd_conf.h)(0x5FBE2976)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63E9FA)
-I (../Inc/main.h)(0x5FA45193)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -1042,13 +1042,13 @@ I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/ST
 F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c)(0x5F992C99)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include -I C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Include-I.\RTE\_stmFirmware-IC:\Users\n-jae\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\n-jae\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="532" -D_RTE_ -DSTM32L412xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L412xx-o stmfirmware\usbd_ioreq.o --omf_browse stmfirmware\usbd_ioreq.crf --depend stmfirmware\usbd_ioreq.d)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5F992C99)
-I (../Inc/usbd_conf.h)(0x5FA45192)
+I (../Inc/usbd_conf.h)(0x5FBE2976)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63E9FA)
-I (../Inc/main.h)(0x5FA45193)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
@@ -1084,13 +1084,13 @@ F (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/ST
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x5FA4552E)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x5F992C99)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x5F992C99)
-I (../Inc/usbd_conf.h)(0x5FA45192)
+I (../Inc/usbd_conf.h)(0x5FBE2976)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63E9EC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63E9FA)
-I (../Inc/main.h)(0x5FA45193)
+I (../Inc/main.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F992C96)
-I (../Inc/stm32l4xx_hal_conf.h)(0x5FA45193)
+I (../Inc/stm32l4xx_hal_conf.h)(0x5FBE2976)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F992C96)
 I (C:/Users/n-jae/STM32Cube/Repository/STM32Cube_FW_L4_V1.16.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F992C8B)
