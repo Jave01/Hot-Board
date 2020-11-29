@@ -8,7 +8,7 @@ actions = ['Execute File', 'Hotkey', 'Open URL']
 ProfileHandler = ProfileHandler()
 
 for i in range(12):
-    keys.append('s' + str(i))
+    keys.append('s' + str(i+1))
 
 basic_questions = [
     {

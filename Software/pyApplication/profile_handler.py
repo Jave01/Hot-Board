@@ -30,7 +30,7 @@ class ProfileHandler():
             users = ET.SubElement(settings_data, 'users')
             user = ET.SubElement(users, 'user', name='user1')
             for i in range(self.key_number):
-                ET.SubElement(user, 'key', name='s' + str(i), function='', additional_info='')
+                ET.SubElement(user, 'key', name='s' + str(i+1), function='', additional_info='')
 
             self.tree = ET.ElementTree(settings_data)
             self.tree.write(self.path)
