@@ -1,0 +1,18 @@
+<Settings>
+    <users>
+        <user1 name="user1">
+            <key additional_info="" function="execute file" name="s1" />
+            <key additional_info="" function="hotkey" name="s2" />
+            <key additional_info="https://www.google.ch" function="open url" name="s3" />
+            <key additional_info="Ctrl" function="hotkey" name="s4" />
+            <key additional_info="Ctrl,Shift,Alt,Win,F4" function="hotkey" name="s5" />
+            <key additional_info="" function="hotkey" name="s6" />
+            <key additional_info="PlayPause" function="hotkey" name="s7" />
+            <key additional_info="" function="" name="s8" />
+            <key additional_info="" function="" name="s9" />
+            <key additional_info="Ctrl,Alt,m" function="" name="s10" />
+            <key additional_info="Alt,F4" function="hotkey" name="s11" />
+            <key additional_info="" function="" name="s12" />
+        </user1>
+    </users>
+</Settings>
