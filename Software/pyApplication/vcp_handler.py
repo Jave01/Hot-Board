@@ -28,7 +28,7 @@ class VirtualComPort():
             writeTimeout=2
         )
         self.is_connected = False
-    
+
     def start_hot_board(self, com: str = '', baud: int = 115200) -> bool:
         """ searches for a connected board and tries to connect.
             COM port and baudrate can be changed manually if needed
@@ -53,7 +53,7 @@ class VirtualComPort():
 
         if self.ser.isOpen():
             print('connection established')
-            # todo: 
+            # todo:
             # add a verification for the board
             return True
         else:
