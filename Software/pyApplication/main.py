@@ -9,6 +9,7 @@ import subprocess
 import sys,os
 from profile_handler import ProfileHandler
 from vcp_handler import VirtualComPort
+from console_gui import run_gui
 
 vcp = VirtualComPort('s', 2)    # define serial protocoll -> eg. 's01' for switch 1
 # profile file must be im the same dir as main
@@ -35,10 +36,10 @@ while True:
         if key != '':   # if a key got pressed
             print(key)
             if key == 's0':
-                subprocess.Popen([sys.executable, 'console_gui.py'], creationflags=subprocess.CREATE_NEW_CONSOLE)
-                #subprocess.Popen(r"cmd", creationflags=subprocess.CREATE_NEW_CONSOLE)
-                #subprocess.Popen("python console_gui.py 1", shell=True)
-                #vcp.get_buffer_value() # flush serial buffer, so the pressed buttons while the gui was open, get deleted
+                run_gui()
+                # restart script
+                os.execv(sys.executable, ['python'] + sys.argv)
+                vcp.ser.flushInput() # flush serial buffer, so the pressed buttons while the gui was open, get deleted
             elif key == 's12':
                 print(ProfileHandler.key_functions)
                 break

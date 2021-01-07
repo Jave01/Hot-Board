@@ -105,28 +105,30 @@ def list_to_hotkey(hotkey_list: list):
     return final_string[:-1]
 
 
-while True:
-    menu = prompt(basic_questions)
-    if menu['menu'] == 'Change key action':
-        # get the values from the user
-        key_info = prompt(key_questions)
-        selected_key = key_info['key_select']
-        selected_action = key_info['action_select']
+def run_gui():
+    is_running = True
+    while is_running:
+        menu = prompt(basic_questions)
+        if menu['menu'] == 'Change key action':
+            # get the values from the user
+            key_info = prompt(key_questions)
+            selected_key = key_info['key_select']
+            selected_action = key_info['action_select']
 
-        if selected_action == 'Hotkey':
-            # get keys from user
-            hotkey_keys = prompt(hotkey_question)
-            # store keys in a list
-            special_keys = hotkey_keys['select_special_keys']
-            normal_keys = list(hotkey_keys['select_normal_keys'])
-            # convert the list and change the action
-            hotkey_str = list_to_hotkey(special_keys + normal_keys)
-            ProfileHandler.change_action(selected_key, selected_action.lower(), hotkey_str)
+            if selected_action == 'Hotkey':
+                # get keys from user
+                hotkey_keys = prompt(hotkey_question)
+                # store keys in a list
+                special_keys = hotkey_keys['select_special_keys']
+                normal_keys = list(hotkey_keys['select_normal_keys'])
+                # convert the list and change the action
+                hotkey_str = list_to_hotkey(special_keys + normal_keys)
+                ProfileHandler.change_action(selected_key, selected_action.lower(), hotkey_str)
 
-        elif selected_action == 'Execute File' or selected_action == 'Open URL':
-            path = prompt(path_question)
-            path_str = path['path']
-            ProfileHandler.change_action(selected_key, selected_action.lower(), path_str)
+            elif selected_action == 'Execute File' or selected_action == 'Open URL':
+                path = prompt(path_question)
+                path_str = path['path']
+                ProfileHandler.change_action(selected_key, selected_action.lower(), path_str)
 
-    elif menu['menu'] == 'exit':
-        break
+        elif menu['menu'] == 'exit':
+            is_running = False
