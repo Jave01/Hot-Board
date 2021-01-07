@@ -1,3 +1,5 @@
+import os
+import sys
 from PyInquirer import prompt, Separator
 from profile_handler import ProfileHandler
 
@@ -5,7 +7,7 @@ from profile_handler import ProfileHandler
 keys = []
 actions = ['Execute File', 'Hotkey', 'Open URL']
 
-ProfileHandler = ProfileHandler()
+ProfileHandler = ProfileHandler(path=os.path.join(sys.path[0],'profiles.xml'))
 
 for i in range(12):
     keys.append('s' + str(i+1))

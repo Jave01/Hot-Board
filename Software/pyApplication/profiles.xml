@@ -2,8 +2,8 @@
     <users>
         <user1 name="user1">
             <key additional_info="" function="execute file" name="s1" />
-            <key additional_info="" function="hotkey" name="s2" />
-            <key additional_info="https://www.google.ch" function="open url" name="s3" />
+            <key additional_info="f" function="hotkey" name="s2" />
+            <key additional_info="https://www.youtube.com/?hl=de&amp;gl=CH" function="open url" name="s3" />
             <key additional_info="Ctrl" function="hotkey" name="s4" />
             <key additional_info="Ctrl,Shift,Alt,Win,F4" function="hotkey" name="s5" />
             <key additional_info="" function="hotkey" name="s6" />

@@ -1,9 +1,12 @@
 import os
+import sys
 import xml.etree.ElementTree as ET
 from pynput.keyboard import Key, Controller
 import webbrowser
 import bz2
 import pyDes
+
+DEFAULT_PROFILE_PATH = os.path.join(sys.path[0],'profiles.xml')
 
 class ProfileHandler():
     """
@@ -13,7 +16,7 @@ class ProfileHandler():
     all functions that are executed at the pressing of a key take place here
     """
 
-    def __init__(self, key_number: int = 12, path: str = 'profiles.xml'):
+    def __init__(self, key_number: int = 12, path: str = DEFAULT_PROFILE_PATH):
         self.active_user = 'user1'
         self.key_number = key_number
         self.path = path

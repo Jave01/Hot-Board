@@ -6,12 +6,13 @@
 # ******************************************
 import serial
 import subprocess
-import sys
+import sys,os
 from profile_handler import ProfileHandler
 from vcp_handler import VirtualComPort
 
 vcp = VirtualComPort('s', 2)    # define serial protocoll -> eg. 's01' for switch 1
-ProfileHandler = ProfileHandler()
+# profile file must be im the same dir as main
+ProfileHandler = ProfileHandler(path=os.path.join(sys.path[0],'profiles.xml'))
 ProfileHandler.reload_actions()
 
 def wait_for_board():
@@ -38,7 +39,8 @@ while True:
                 #subprocess.Popen(r"cmd", creationflags=subprocess.CREATE_NEW_CONSOLE)
                 #subprocess.Popen("python console_gui.py 1", shell=True)
                 #vcp.get_buffer_value() # flush serial buffer, so the pressed buttons while the gui was open, get deleted
-            elif key == 's11':
+            elif key == 's12':
+                print(ProfileHandler.key_functions)
                 break
             else:
                 ProfileHandler.execute_action(key)
