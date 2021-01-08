@@ -36,8 +36,15 @@ while True:
         if key != '':   # if a key got pressed
             print(key)
             if key == 's0':
+                #os.system('python ' + os.path.join(sys.path[0],'main.py'))
+                #os.execv(sys.executable, ['python'] + [os.path.join(sys.path[0],'main.py')])
+                #os.spawnl(sys.executable, ['python'] + [os.path.join(sys.path[0],'main.py')])
                 run_gui()
+
+                #os.system('pythonw.exe ' + os.path.join(sys.path[0],'main.py'))
+
                 # restart script
+                #os.execv(sys.executable, ['python'] + [os.path.join(sys.path[0],'main.pyw')])
                 os.execv(sys.executable, ['python'] + sys.argv)
                 vcp.ser.flushInput() # flush serial buffer, so the pressed buttons while the gui was open, get deleted
             elif key == 's12':
