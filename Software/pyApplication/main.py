@@ -16,6 +16,7 @@ vcp = VirtualComPort('s', 2)    # define serial protocoll -> eg. 's01' for switc
 ProfileHandler = ProfileHandler(path=os.path.join(sys.path[0],'profiles.xml'))
 ProfileHandler.reload_actions()
 
+
 def wait_for_board():
     known_ports = []
     while not vcp.ser.isOpen():
@@ -30,27 +31,31 @@ def wait_for_board():
             else:
                 continue
 
-while True:
-    if vcp.ser.isOpen():
-        key = vcp.check_switch_state()
-        if key != '':   # if a key got pressed
-            print(key)
-            if key == 's0':
-                #os.system('python ' + os.path.join(sys.path[0],'main.py'))
-                #os.execv(sys.executable, ['python'] + [os.path.join(sys.path[0],'main.py')])
-                #os.spawnl(sys.executable, ['python'] + [os.path.join(sys.path[0],'main.py')])
-                run_gui()
+def main():
+    while True:
+        if vcp.ser.isOpen():
+            key = vcp.check_switch_state()
+            if key != '':   # if a key got pressed
+                print(key)
+                if key == 's0':
+                    #os.system('python ' + os.path.join(sys.path[0],'main.py'))
+                    #os.execv(sys.executable, ['python'] + [os.path.join(sys.path[0],'main.py')])
+                    #os.spawnl(sys.executable, ['python'] + [os.path.join(sys.path[0],'main.py')])
+                    run_gui()
 
-                #os.system('pythonw.exe ' + os.path.join(sys.path[0],'main.py'))
+                    #os.system('pythonw.exe ' + os.path.join(sys.path[0],'main.py'))
 
-                # restart script
-                #os.execv(sys.executable, ['python'] + [os.path.join(sys.path[0],'main.pyw')])
-                os.execv(sys.executable, ['python'] + sys.argv)
-                vcp.ser.flushInput() # flush serial buffer, so the pressed buttons while the gui was open, get deleted
-            elif key == 's12':
-                print(ProfileHandler.key_functions)
-                break
-            else:
-                ProfileHandler.execute_action(key)
-    else:
-        wait_for_board()
+                    # restart script
+                    #os.execv(sys.executable, ['python'] + [os.path.join(sys.path[0],'main.pyw')])
+                    os.execv(sys.executable, ['python'] + sys.argv)
+                    vcp.ser.flushInput() # flush serial buffer, so the pressed buttons while the gui was open, get deleted
+                elif key == 's12':
+                    print(ProfileHandler.key_functions)
+                    break
+                else:
+                    ProfileHandler.execute_action(key)
+        else:
+            wait_for_board()
+
+if __name__ == "__main__":
+    main()
