@@ -4,6 +4,7 @@ import json
 import bz2
 import pyDes
 
+# Get current path and add the filename
 DEFAULT_PROFILE_PATH = os.path.join(sys.path[0],'profiles.json')
 
 class ProfileHandler():
@@ -18,25 +19,26 @@ class ProfileHandler():
         self.key_number = key_number
         self.path = path
         self.key_functions = []
-        # check if a profile file exists
         
 
-    def get_settings(self):
+    def load_settings(self):
+        # check if a profile file exists
         try:
             with open(self.path, 'r') as settings_file:
-                data = json.load(settings_file)
-            return data
+                settings = json.load(settings_file)
+
         # If there is no valid profile file -> create one and fill it with the default parameters
         except FileNotFoundError:
             settings = {}
             settings["user1"] = {"name": "user1", "keys": {}}
 
-            for i in range(12):
-                settings["user1"]["keys"]["key" + str(i+1)] = {"function": "", "args": ""}
+            for i in range(11):
+                settings["user1"]["keys"]["s" + str(i+1)] = {"function": "", "args": ""}
 
             with open(self.path, 'w') as f:
                 json.dump(settings, f)
-
+            
+        return settings
 
 
     def change_action(self, key: str, new_action: str, action_info=''):

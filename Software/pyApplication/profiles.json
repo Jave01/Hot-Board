@@ -1,0 +1,51 @@
+{
+    "user1": {
+        "name": "user1", 
+        "keys": {
+            "s1": {
+                "function": "hotkey", 
+                "args": "Win,d"
+                }, 
+            "s2": {
+                "function": "", 
+                "args": ""
+                }, 
+            "s3": {
+                "function": "", 
+                "args": ""
+                }, 
+            "s4": {
+                "function": "", 
+                "args": ""
+                }, 
+            "s5": {
+                "function": "", 
+                "args": ""
+                }, 
+            "s6": {
+                "function": "", 
+                "args": ""
+                }, 
+            "s7": {
+                "function": "", 
+                "args": ""
+                }, 
+            "s8": {
+                "function": "", 
+                "args": ""
+                }, 
+            "s9": {
+                "function": "", 
+                "args": ""
+                }, 
+            "s10": {
+                "function": "", 
+                "args": ""
+                }, 
+            "s11": {
+                "function": "", 
+                "args": ""
+                }
+            }
+        }
+}

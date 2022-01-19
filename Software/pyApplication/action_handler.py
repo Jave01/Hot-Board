@@ -1,12 +1,13 @@
 import os
-import json
 from pynput.keyboard import Key, Controller
 import webbrowser
 
 
-keyboard = Controller()
+
 
 class KeyAction():
+    keyboard = Controller()
+
     @classmethod
     def execute_action(cls, action: str, args: str):
         """Execute the function from the key"""
@@ -27,7 +28,8 @@ class KeyAction():
                 if len(k) == 1:
                     cls.keyboard.press(k)
                 else:
-                    cls.press_special_key(k)
+                    if not cls.press_special_key(k):
+                        print("Special key not found")
 
             # release every pressed key
             for k in keys_to_press:
@@ -41,57 +43,69 @@ class KeyAction():
 
   
     @classmethod
-    def load_settings(cls, path_to_file):
-        try:
-            with open(path_to_file, 'r') as f:
-                cls.key_settings = json.load(f)
-
-        except FileNotFoundError:
-            print("File at given path was not found")
-
-
-    @classmethod
-    def press_special_key(cls, key):
+    def press_special_key(cls, key) -> bool:
         if key == 'Ctrl':
             cls.keyboard.press(Key.ctrl)
+            return True
         elif key == 'Shift':
             cls.keyboard.press(Key.shift)
+            return True
         elif key == 'Alt':
             cls.keyboard.press(Key.alt)
+            return True
         elif key == 'Win':
             cls.keyboard.press(Key.cmd)
+            return True
         elif key == 'F4':
             cls.keyboard.press(Key.f4)
+            return True
         elif key == 'F7':
             cls.keyboard.press(Key.f7)
+            return True
         elif key == 'F9':
             cls.keyboard.press(Key.f9)
+            return True
         elif key == 'PlayPause':
             cls.keyboard.press(Key.media_play_pause)
+            return True
         elif key == 'previous':
             cls.keyboard.press(Key.media_previous)
+            return True
         elif key == 'next':
             cls.keyboard.press(Key.media_next)
+            return True
+        return False
 
     @classmethod
-    def release_special_key(cls, key):
+    def release_special_key(cls, key) -> bool:
         if key == 'Ctrl':
             cls.keyboard.release(Key.ctrl)
+            return True
         elif key == 'Shift':
             cls.keyboard.release(Key.shift)
+            return True
         elif key == 'Alt':
             cls.keyboard.release(Key.alt)
+            return True
         elif key == 'Win':
             cls.keyboard.release(Key.cmd)
+            return True
         elif key == 'F4':
             cls.keyboard.release(Key.f4)
+            return True
         elif key == 'F7':
             cls.keyboard.release(Key.f7)
+            return True
         elif key == 'F9':
             cls.keyboard.release(Key.f9)
+            return True
         elif key == 'PlayPause':
             cls.keyboard.release(Key.media_play_pause)
+            return True
         elif key == 'previous':
             cls.keyboard.release(Key.media_previous)
+            return True
         elif key == 'next':
             cls.keyboard.release(Key.media_next)
+            return True
+        return False

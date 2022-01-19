@@ -1,5 +1,5 @@
 from PyInquirer import prompt, Separator
-from profile_handler import ProfileHandler
+from settings_handler import ProfileHandler
 
 # users = []       not available right now
 keys = []
