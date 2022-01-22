@@ -1,132 +1,123 @@
-from PyInquirer import prompt, Separator
-from settings_handler import ProfileHandler
+from msilib.schema import SelfReg
+import random
+import os
+import sys
+from PySide6.QtQml import QQmlApplicationEngine
+from PySide6.QtGui import QGuiApplication, QPalette, QColor
+from PySide6.QtCore import QSize, Qt, QRect
+from PySide6.QtWidgets import (
+    QMainWindow, 
+    QWidget, 
+    QPushButton, 
+    QTabWidget, 
+    QApplication, 
+    QVBoxLayout, 
+    QHBoxLayout, 
+    QGridLayout,
+    QComboBox,
+    QLineEdit,
+    QButtonGroup
+)
+WIDTH = 800
+HEIGHT = 500
 
-# users = []       not available right now
-keys = []
-actions = ['Execute File', 'Hotkey', 'Open URL']
+class Color(QWidget):
+    """ Dummy class for creating colored planes """
+    def __init__(self, *args):
+        super(Color, self).__init__()
 
-ProfileHandler = ProfileHandler()
+        self.setAutoFillBackground(True)
 
-for i in range(12):
-    keys.append('s' + str(i))
+        palette = self.palette()
 
+        palette.setColor(QPalette.Window, QColor(*args))
 
-basic_questions = [
-    {
-        'type': 'list',
-        'name': 'menu',
-        'message': 'What do you want to do?',
-        'choices': [
-            'Change key action',
-            # 'Change User Profile'
-            'exit'
-        ]
-    }
-]
+        self.setPalette(palette)
 
-key_questions = [
-    {
-        'type': 'list',
-        'name': 'key_select',
-        'message': 'Select a key',
-        'choices': keys
-    },
-    {
-        'type': 'list',
-        'name': 'action_select',
-        'message': 'Select an action',
-        'choices': actions
-    }
-]
-
-hotkey_question = [
-    {
-        'type': 'checkbox',
-        'name': 'select_special_keys',
-        'message': 'Select special keys',
-        'choices': [
-            {
-                'name': 'Ctrl'
-            },
-            {
-                'name': 'Shift'
-            },
-            {
-                'name': 'Alt'
-            },
-{
-                'name': 'Win'
-            },
-            {
-                'name': 'F4'
-            },
-            {
-                'name': 'F7'
-            },
-            {
-                'name': 'F9'
-            },
-            Separator(' -- Media Actions --'),
-            {
-                'name': 'PlayPause'
-            },
-            {
-                'name': 'next'
-            },
-            {
-                'name': 'previous'
-            },
-        ]
-    },
-    {
-        'type': 'input',
-        'name': 'select_normal_keys',
-        'message': 'Enter normal keys (a-z), leave blank if not needed',
-    }
-]
-
-path_question = [
-    {
-        'type': 'input',
-        'name': 'path',
-        'message': 'Enter path to file',
-    }
-]
-
-def list_to_hotkey(hotkey_list: list):
-    """ converts a list into a readable format for the profile handler.
-
-        The final format is a string with the arguments split by commas"""
-    final_string = ''
-    for key in hotkey_list:
-        final_string += (key + ',')
-
-    return final_string[:-1]
+        self.width=200
 
 
-while True:
-    menu = prompt(basic_questions)
-    if menu['menu'] == 'Change key action':
-        # get the needed values from the user
-        key_info = prompt(key_questions)
-        selected_key = key_info['key_select']
-        selected_action = key_info['action_select']
+class PushButton(QPushButton):
+    def __init__(self):
+        super(PushButton, self).__init__()
 
-        if selected_action == 'Hotkey':
-            # get keys from user
-            hotkey_keys = prompt(hotkey_question)
-            # store keys in a list
-            special_keys = hotkey_keys['select_special_keys']
-            normal_keys = list(hotkey_keys['select_normal_keys'])
-            # convert the list and change the action
-            hotkey_str = list_to_hotkey(special_keys + normal_keys)
-            print(selected_action.lower())
-            ProfileHandler.change_action(selected_key, selected_action.lower(), hotkey_str)
+        self.macro_action = ""
+        self.macro_action_args = ""
 
-        elif selected_action == 'Execute File':
-            path = prompt(path_question)
-            path_str = path['path']
-            ProfileHandler.change_action(selected_key, selected_action.lower(), path_str)
 
-    elif menu['menu'] == 'exit':
-        break
+class  MainWindow(QMainWindow):
+    def __init__(self):
+        super(MainWindow, self).__init__()
+
+        self.setWindowTitle("Hot-Board")
+        self.setFixedSize(QSize(WIDTH, HEIGHT))
+
+        overall_layout = QVBoxLayout()
+        buttons_layout = QGridLayout()
+        settings_layout = QHBoxLayout()
+
+        self.btn_group = QButtonGroup()
+        self.active_button = None
+
+        for i in range(3):
+            for j in range(4):
+                btn = PushButton()
+                btn.setCheckable(True)
+                btn.setFixedSize(60, 50)
+                btn.clicked.connect(self.clicked)
+
+                self.btn_group.addButton(btn, id=i)
+                buttons_layout.addWidget(btn, i, j)
+
+        buttons_layout.setContentsMargins(WIDTH//3, 0, WIDTH//3, 0)
+
+        l1 = QVBoxLayout()
+        self.cmb = QComboBox()
+        self.cmb.setPlaceholderText("Select a key")
+        self.cmb.addItems(["Hotkey", "Execute File", "Open URL"])
+        self.cmb.currentTextChanged.connect(self.combo_box_text_changed)
+        self.cmb.setEnabled(False)
+        l1.addWidget(self.cmb)
+
+        self.arg_input = QLineEdit()
+        self.arg_input.setPlaceholderText("arguments")
+        self.arg_input.setFixedSize(QSize(WIDTH//3, 25))
+        l1.addWidget(self.arg_input)
+        l1.addWidget(QPushButton("Save"))
+
+        settings_layout.addLayout(l1)
+
+        overall_layout.addLayout(buttons_layout)
+        overall_layout.addLayout(settings_layout)
+
+        w = Color(0x40, 0x40, 0x40)
+        w.setLayout(overall_layout)
+
+        self.setCentralWidget(w)
+
+        
+
+
+    def clicked(self):
+        self.active_button = self.btn_group.checkedButton()
+        self.arg_input.setText(self.active_button.macro_action_args)
+        
+        if not self.cmb.isEnabled():
+            self.cmb.setEnabled(True)
+            self.cmb.setPlaceholderText("Select an action")
+        
+
+    def combo_box_text_changed(self):
+        print(self.cmb.currentText())
+        self.active_button.macro_action = self.cmb.currentText().lower()
+
+
+    def macro_argument_text_changed(self):
+        pass
+
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    win = MainWindow()
+    win.show()
+    app.exec()
