@@ -1,0 +1,7 @@
+######## install required packages with: pip install -r requirements.txt #########
+
+pynput
+PySide6
+pyDes
+pyserial
+micropython-msilib
